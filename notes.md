@@ -13,19 +13,75 @@
 
 # Slide 2
 
-What is a Universal App?
+A brief history of client side applications
 
-> Single page applications are popular such as Gmail, Google Maps, NowTV Watch and Netflix
-> Often these will start with an empty screen that populates on the customers browser
+> Back in the day, the server was king.  We'd render our pages on the server side, chuck it over to the client, and then use things like JavaScript to add little bits of interaction on top.  Things like autocomplete.
+> After Web 2.0, users increasingly expected richer, more engaging experiences.  So, more and more JS started being included on the client side to enable this.
+> Eventually, in the last few years, developers have been relying on the server less and less, in fact in many cases almost entirely doing away with the server altogether.
 
-> things that wouldn't be possible without SPAS
-  - navigating without a page refresh
-  - drag and drop
-  - analytics
-  - @things in facebook
 
-> This is what an SPA is, an application that runs on the browser
-> Making a SPA universal is the process of making it share code with the server to improve performance, accessibility and SEO.
+# Slide 3
+
+Why is this a problem?
+
+> What happens when you pull the JavaScript rug out from under the feet of your client side app?
+
+ - You're losing money
+ > 1% ish no js https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/
+
+ - You're losing money
+ > churn for bad load times according to Google research: https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/
+
+ - You're losing money
+ > SEO visibility
+
+ - Think of the people!
+ > accessibility
+
+# Slide 4
+
+"When an escalator fails, it becomes stairs."
+>https://jakearchibald.com/2013/progressive-enhancement-still-important/
+
+> Web app equivalent of an escalator:
+>https://help.nowtv.com/
+
+> Web app equivalent of a lift:
+> This is what happens when you try to load instagram without JavaScript support.
+> https://www.instagram.com/?hl=en
+
+
+# Slide 5
+
+Disclaimer: it depends on what you're building.
+
+
+# Slide 6
+
+> Other solutions:
+> crappy connection/load times for second visit: service workers (load for first time, need js, but once offline still works.)
+> google better at SEO for client side apps (but bing aren't)
+> initial load time: other performance optimisations e.g. caching
+> BUT none of these has quite as big an impact as reducing the initial download size.
+> noscript - tag that runs if no js
+
+
+
+
+>- blogs, sales journeys, etc...
+> quick wins:
+> push state transitions
+- no page refresh, less requests, better performance
+- show my blog
+
+# Slide 3
+
+    Write it once; use it everywhere.
+
+> A universal application runs the same piece of code on both server and client side (when we say client we mean browser/mobile).
+>
+
+
 
 # Slide 3
 
@@ -34,24 +90,6 @@ image of someone asking WHY??!
 
 > see below
 
-# Slide 4
-
-Accessibility
-- bullet points
-
-> show some page that has no JS support
-> https://www.instagram.com/?hl=en
-> talk about solutions
-  - show something?!!?!?
-> 1% of customers = ££££££
-> page that works fine:
-  > https://www.google.co.uk
-  - blogs, sales journeys, etc...
-> quick wins:
-  - noscript
-> push state transitions
-  - no page refres, less requests, better performance
-  - show my blog
 
 # Slide 5
 
